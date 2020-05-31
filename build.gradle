@@ -1,0 +1,26 @@
+plugins {
+    id "java"
+    id "edu.wpi.first.GradleRIO" version "2020.3.2"
+    id 'org.openjfx.javafxplugin' version '0.0.8'
+}
+
+repositories {
+    repositories {
+    mavenCentral()
+    maven {
+        name = "WPILib"
+        setUrl("https://first.wpi.edu/FRC/roborio/maven/release")
+    }
+    maven { url "https://frcmaven.wpi.edu:443/artifactory/release" }
+}
+}
+
+javafx {
+    version = "13"
+    modules = [ 'javafx.fxml', 'javafx.controls']
+}
+
+dependencies {
+    compileOnly(group = "edu.wpi.first.shuffleboard:api:2020.3.2")
+    compileOnly("edu.wpi.first.shuffleboard.plugin:networktables:2020.3.2")
+}

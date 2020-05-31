@@ -1,0 +1,9 @@
+<?import javafx.scene.layout.*?>
+<StackPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="/widgets/Point2dWidget" fx:id="root">
+
+   <VBox>
+      <Slider fx:id = "xSlider"/>
+      <Slider fx:id = "ySlider"/>
+   </VBox>
+
+</StackPane>
